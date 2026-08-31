@@ -62,7 +62,9 @@ Public demo URLs after seed:
 
 ## Vercel
 
-Connect the Git repo. Set the same env vars in Project Settings. `vercel.json` schedules:
+Connect the Git repo and set **Framework Preset** to **Next.js**. Leave **Output Directory** empty (do not set it to `public` — that folder is only for static files; Next.js output lives in `.next`).
+
+Set the same env vars in Project Settings. `vercel.json` schedules:
 
 - `/api/cron/reminders` every 5 minutes (workflow steps + appointment reminders)
 - `/api/cron/usage` daily (usage rollup)
